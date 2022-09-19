@@ -1,6 +1,245 @@
+.wrapper {
+	background-image: url("../img/Blurr-header.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: 50% 70%;
+}
+
 .header {
-	background-color: #1E1E1E;
+	padding: 37px 0px;
 	&__inner {
-		
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
+}
+.menu-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 64px;
+		margin-right: 160px;
+	}
+
+	&__link {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.04em;
+		color: #f5fbf2;
+
+		&:hover {
+			transition: color ease 0.3s;
+			color: #ffce4e;
+			border-bottom: 2px solid #ffce4e;
+		}
+	}
+
+	&__btn {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.03em;
+		color: #ffce4e;
+		background: rgba(233, 215, 167, 0.1);
+		border: 1px solid #ffce4e;
+		padding: 21px 29px;
+	}
+}
+
+.explore {
+	position: relative;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title {
+		font-family: "Oxanium";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 85px;
+		line-height: 130px;
+		color: #f5fbf2;
+		max-width: 710px;
+		margin-bottom: 50px;
+		span {
+			color: #ffce4e;
+		}
+	}
+	&__first-block {
+		margin-top: 150px;
+	}
+	&__buttons {
+		display: flex;
+		gap: 48px;
+		margin-bottom: 120px;
+	}
+	&__btn {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 36px;
+		&:nth-child(1) {
+			background: #ffce4e;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 36px;
+			color: #000000;
+			padding: 24px 76px;
+		}
+		&:nth-child(2) {
+			background: rgba(233, 215, 167, 0.1);
+			border: 1px solid #ffce4e;
+			color: #ffffff;
+			padding: 24px 82px;
+		}
+	}
+}
+
+.media-explore {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 100px;
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		font-family: "Oxanium";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 62px;
+		line-height: 78px;
+		color: #f5fbf2;
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 35px;
+		color: #9b9e9a;
+	}
+}
+
+.explore__second-block {
+	background-image: url("../img/image.jpg");
+	width: 558px;
+	height: 718px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: -120px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url("../img/Blurr-effect.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: -177px;
+		right: -90px;
+		overflow: hidden;
+		width: 700px;
+		height: 1000px;
+		z-index: -1;
+	}
+}
+
+.start-bid {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 0px;
+	background: #fff;
+	backdrop-filter: blur(13.5px);
+	border-radius: 0px;
+
+	&__box {
+		margin-right: 160px;
+	}
+	&__title {
+		font-family: "Oxanium";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 35px;
+		letter-spacing: 0.07em;
+		color: #16091b;
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 35px;
+		color: #594d5e;
+	}
+
+	&__btn {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		color: #000000;
+		background: #ffce4e;
+		backdrop-filter: blur(22.5px);
+		padding: 23px 45px;
+	}
+}
+
+.current-bid {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(92.8deg, rgba(255, 137, 61, 0.09) -52.37%, rgba(250, 250, 250, 0.9) 137.41%);
+	opacity: 0.95;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+	backdrop-filter: blur(22.5px);
+	margin: 24px 0px;
+	padding: 18px 54px 16px 39px;
+	width: 512px;
+	&__subtitle {
+		font-family: "Oxanium";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.08em;
+		text-align: capitalize;
+		color: #e4dee7;
+		margin-bottom: 7px;
+	}
+
+	&__title {
+		font-family: "Oxanium";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+		color: #ffffff;
+	}
+}
+
+
+.explore__link-scroll {
+	position: absolute;
+	left: 50%;
+	transform: translate(-40%);
+	bottom: -200px;
 }
