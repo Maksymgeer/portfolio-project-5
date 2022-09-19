@@ -21,13 +21,13 @@ $('.menu').on('click', function () {
 
 
 //--------------- BURGER-MENU ---------------//
-/*
+
 
 function burgerMenu(selector) {
 	let menu = $(selector);
-	let button = menu.find('.header-menu__button', '.header-menu__lines');
-	let links = menu.find('.header-item__link');
-	let overlay = menu.find('.header-menu__overlay');
+	let button = menu.find('.menu-header__button', '.menu-header__lines');
+	let links = menu.find('.menu-header__link');
+	let overlay = menu.find('.menu-header__overlay');
 
 	button.on('click', (e) => {
 		e.preventDefault();
@@ -48,8 +48,8 @@ function burgerMenu(selector) {
 	}
 }
 
-burgerMenu('.header__menu');
-*/
+burgerMenu('.menu-header');
+
 
 //--------------CONTENT MORE--------------//
 /*

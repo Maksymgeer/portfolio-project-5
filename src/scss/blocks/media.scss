@@ -1,0 +1,18 @@
+@media (max-width: 940px) {
+	.menu-header__list {
+		margin-right: 100px;
+	}
+}
+
+@media (max-width: 777px) {
+	.menu-header__list {
+		margin-right: 50px;
+	}
+}
+
+
+@media (max-width: 742px) {
+	.menu-header__list {
+		display: none;
+	}
+}
