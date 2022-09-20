@@ -63,6 +63,11 @@
 // Burger //
 
 @media (max-width: 741px) {
+
+	.header {
+		padding: 25px 0px;
+	}
+
 	.menu-header__box {
 		display: flex;
 		flex-direction: column;
@@ -89,7 +94,7 @@
 		top: 0;
 		right: 0px;
 		z-index: 30;
-		width: 30px;
+		width: 27px;
 		height: 51px;
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
@@ -101,10 +106,9 @@
 	.menu-header__lines::after,
 	.menu-header__lines {
 		position: absolute;
-		width: 25px;
-		height: 2px;
+		width: 24px;
+		height: 3px;
 		background-color: #ffce4e;
-		border-radius: 10px;
 		-webkit-transition: 0.4s;
 		-moz-transition: 0.4s;
 		-o-transition: 0.4s;
@@ -204,6 +208,8 @@
 	}
 	&__buttons {
 		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
 		gap: 48px;
 		margin-bottom: 120px;
 	}
@@ -270,19 +276,6 @@
 	justify-content: space-between;
 	margin-top: -120px;
 	position: relative;
-	&::after {
-		content: "";
-		position: absolute;
-		background-image: url("../img/Blurr-effect.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		top: -177px;
-		right: -90px;
-		overflow: hidden;
-		width: 700px;
-		height: 1000px;
-		z-index: -1;
-	}
 }
 
 .start-bid {
