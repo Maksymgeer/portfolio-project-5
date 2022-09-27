@@ -112,9 +112,145 @@
 	}
 }
 
-
 @media (max-width: 1065px) {
 	.explore__inner {
 		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.explore__buttons {
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 65px;
+	}
+	.explore__second-block {
+		margin-top: 0px;
+		width: 500px;
+		height: 600px;
+	}
+
+	.media-explore {
+		margin-top: 50px;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 610px) {
+	.explore__title {
+		font-size: 68px;
+		line-height: 102px;
+	}
+	.media-explore {
+		gap: 40px !important;
+	}
+	.media-explore__title {
+		font-size: 54px;
+		line-height: 68px;
+	}
+
+	.media-explore__text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.explore__buttons {
+		gap: 22px;
+	}
+}
+
+@media (max-width: 580px) {
+	.explore__second-block {
+		width: 400px;
+		height: 570px;
+	}
+
+	.current-bid {
+		width: 350px;
+	}
+
+	.start-bid {
+		padding: 24px 0px;
+		&__box {
+			margin-right: 60px;
+		}
+	}
+
+	.start-bid__btn {
+		padding: 18px 32px;
+	}
+
+	.start-bid__title {
+		font-size: 25px;
+		line-height: 29px;
+	}
+	.start-bid__text {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.media-explore__title {
+		font-size: 37px;
+		line-height: 42px;
+	}
+
+	.media-explore__text {
+		font-size: 17px;
+		line-height: 27px;
+	}
+}
+
+@media (max-width: 505px) {
+	.explore__title {
+		font-size: 46px;
+		line-height: 84px;
+	}
+
+	.explore__btn {
+		&:nth-child(1) {
+			padding: 18px 40px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+		&:nth-child(2) {
+			padding: 19px 45px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
+
+@media (max-width: 399px) {
+	.explore__buttons {
+		flex-wrap: wrap;
+	}
+	.explore__second-block {
+		width: 310px;
+		height: 500px;
+	}
+	.current-bid {
+		width: 282px;
+	}
+	.current-bid__title {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.start-bid__box {
+		margin-right: 30px;
+	}
+
+	.start-bid__btn {
+		padding: 16px 30px;
+	}
+	.media-explore {
+		flex-wrap: wrap;
+	}
+}
+
+
+@media (max-width: 355px) {
+	.companies__img:nth-child(2) {
+		width: 290px;
 	}
 }

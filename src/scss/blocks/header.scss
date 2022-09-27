@@ -363,10 +363,13 @@
 
 .companies {
 	margin-top: 250px;
+	margin-bottom: 84px;
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 132px;
+		column-gap: 132px;
+		row-gap: 80px;
 	}
 }
