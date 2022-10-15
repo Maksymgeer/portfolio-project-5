@@ -23,12 +23,36 @@ $('.collection__inner').slick({
 	arrows: true,
 	dots: false,
 	infinite: true,
-	speed: 300,
+	speed: 400,
 	slidesToShow: 2,
 	rightMode: true,
 	variableWidth: true
 });
 
+$('.categories__inner').slick({
+	arrows: false,
+	dots: false,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	rightMode: true,
+	variableWidth: true,
+	autoplay: true,
+	autoplaySpeed: 1500
+});
+
+/*
+const next = document.querySelector(".slick-next");
+const prev = document.querySelector(".slick-prev");
+
+function sliderClick() {
+	if (next.addEventListener("click", sliderClick)) {
+		prev.style.display = "flex";
+	} else {
+		prev.style.display = "none";
+	}
+}
+sliderClick();
+*/
 
 
 //--------------- BURGER-MENU ---------------//
@@ -73,7 +97,6 @@ function work() {
 			<button class="explore__btn">Create</button>
 		</div>
 	</div>
-			class="explore__img-scroll"></a>
 	<div class="explore__second-block">
 		<div class="explore__current-bid current-bid">
 			<div class="current-bid__box">
